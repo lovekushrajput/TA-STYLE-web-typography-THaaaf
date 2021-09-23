@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* custom */
+body{
+    font-family: 'DM Serif Display', serif;
+}
+.container{
+    max-width: 910px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+img{
+    width: 100%;
+}
+.header{
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.header h1{
+    margin-top: 8px;
+    font-size: 28px;
+    font-family: 'Karla', sans-serif;
+}
+.nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(118,115,124);
+    text-transform: uppercase;
+}
+.btn{
+    margin-top: 6px;
+    margin-left: 20px;
+    padding: 8px 4px;
+    color: rgb(118,115,124);
+    background-color: white;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+/* section-1*/
+.article{
+    background-color: rgb(45,38,64);
+    display: flex;
+    height: 47vh;
+    position: relative;
+}
+.media1{
+    width: 27%;
+    position: absolute;
+    top: 23px;
+    right: 175px;
+}
+.human{
+    color: white;
+    width: 450px;
+    margin-left: 130px;
+}
+.human p{
+    margin: 25px 0;
+    text-align: left;
+}
+.article hr{
+    border-top:1px solid white;
+    margin-top: 40px;
+    margin-left: 5px;
+    width: 25%;
+}
+h2{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: 'Karla', sans-serif;
+}
+.human button{
+    color: white;
+    background-color: rgb(45,38,64);
+    text-transform: uppercase;
+    padding: 8px 4px;
+    border-radius: 3px;
+    border: 1px solid white;
+    /* margin-top: 10px; */
+}
+/* section-2 */
+.article2{
+    display: flex;
+}
+.insurance{
+    width: 400px;
+    margin-top: 180px;
+    margin-left: 100px;
+}
+h3{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: 'Karla', sans-serif;
+    margin-bottom: 20px;
+}
+.insurance button{
+    text-transform: uppercase;
+    background-color: white;
+    border-radius: 3px;
+    padding: 8px 4px;
+    margin-top: 30px;
+}
+.media2{
+    width: 30%;
+    margin: 100px 0;
+    margin-left: 170px;
+}
+/* section-3 */
+.article3{
+    margin-bottom: 50px;
+}
+h4{
+    font-size: 35px;
+    font-family: 'Karla', sans-serif;
+}
+.icon{
+    display: flex;
+    margin-top: 30px;
+}
+.icon a{
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(138,180,240);
+    color:white;
+}
+h5{
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    margin: 10px 0;
+}
+.article3 hr{
+    border-top:1px solid grey;
+    margin-left: 5px;
+    width: 25%;
+}
+/* section-4 */
+.article4{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+    background-color: rgb(45,38,64);
+}
+h6{
+    font-size: 35px;
+    color: white;
+    max-width: 360px;
+    font-family: 'Karla', sans-serif;
+    margin-left: 20px;
+}
+.article4 button{
+    margin-right: 20px;
+    font-size: 10px;
+    padding: 9px 17px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(45,38,64);
+    border: 1px solid white;
+}
+/* article-5 */
+.article5{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    /* margin-bottom: 70px; */
+}
+.article5 h2{
+ font-size: 35px;
+ font-family: 'Karla', sans-serif;
+ bottom: 10px;
+}
+.article5 a{
+    color: grey;
+    font-size: 25px;
+    margin-left: 10px;
+}
+/* article-6 */
+.article6{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.article6 a{
+    text-decoration: none;
+    color: grey;
+    text-transform: capitalize;
+}
+.about{
+    margin: 0 14px;
+}
+.work{
+    margin: 0 14px;
+}
+/* footer */
+footer{
+    background-color: rgb(45,38,64);
+    height: 40px;
+    margin-bottom: 30px;
+}
+footer p{
+    text-align: center;
+    color:white;
+    padding-top: 13px;
+}
