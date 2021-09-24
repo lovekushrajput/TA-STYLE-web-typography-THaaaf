@@ -47,144 +47,150 @@ table {
 	border-spacing: 0;
 }
 /* custom */
+/* general-class */
+h1
+h2
+h3
+h4
+h5
+h6{
+    font-family: 'Karla', sans-serif;
+}
+*,
+*::before
+*::after{
+    box-sizing:border-box
+}
 body{
+    line-height: 1.5;
     font-family: 'DM Serif Display', serif;
 }
 .container{
-    max-width: 910px;
+    max-width: 950px;
     margin: 0 auto;
     padding: 0 32px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.align-content{
+    align-items: flex-start;
 }
 img{
     width: 100%;
 }
-.header{
-    height: 50px;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
+.btn{
+    color: grey;
+    border-radius: 3px;
+    border: 1px solid grey;
+    padding: 4px 11px;
+    font-size: 15px;
+    display: inline-block;
+    text-transform: uppercase;
 }
-.header h1{
-    margin-top: 8px;
-    font-size: 28px;
-    font-family: 'Karla', sans-serif;
+.btn-secondary{
+    color: white;
+    border-color: white;
+}
+a{
+    text-decoration: none;
+}
+.col{
+    flex: 0 1 43%;
+}
+
+/* header */
+.header{
+    background-color: white;
+    /* padding: 20px 0; */
+}
+
+.brand{
+    color: rgb(45,38,64);
+    font-size: 36px;
+    font-family: 'DM Serif Display', serif;    
 }
 .nav a{
-    margin-left: 20px;
-    text-decoration: none;
-    color: rgb(118,115,124);
+    color: grey;
+    margin-left: 10px;
     text-transform: uppercase;
+    font-weight: 700;
 }
-.btn{
-    margin-top: 6px;
-    margin-left: 20px;
-    padding: 8px 4px;
-    color: rgb(118,115,124);
-    background-color: white;
-    text-transform: uppercase;
-    border-radius: 4px;
-}
+
 /* section-1*/
-.article{
+.hero{
     background-color: rgb(45,38,64);
-    display: flex;
-    height: 47vh;
-    position: relative;
-}
-.media1{
-    width: 27%;
-    position: absolute;
-    top: 23px;
-    right: 175px;
-}
-.human{
+    padding: 20px 0;
     color: white;
-    width: 450px;
-    margin-left: 130px;
 }
-.human p{
-    margin: 25px 0;
-    text-align: left;
+.line{
+    margin-top: 25px;
+    width: 200px;
+    height: 2px;
+    background-color: white;
+    color: white;
 }
-.article hr{
-    border-top:1px solid white;
-    margin-top: 40px;
-    margin-left: 5px;
-    width: 25%;
-}
-h2{
+.hero-h1{
+    margin-top: 15px;
     font-size: 40px;
-    text-transform: capitalize;
-    font-family: 'Karla', sans-serif;
-}
-.human button{
-    color: white;
-    background-color: rgb(45,38,64);
+    line-height: 1.1;
     text-transform: uppercase;
-    padding: 8px 4px;
-    border-radius: 3px;
-    border: 1px solid white;
-    /* margin-top: 10px; */
+}
+.hero-p{
+     font-size: 15px;
+     padding: 20px 0;
+}
+.hero-image{
+    margin-bottom: -140px;
 }
 /* section-2 */
-.article2{
-    display: flex;
+.about{
+    padding: 90px 0;
 }
-.insurance{
-    width: 400px;
-    margin-top: 180px;
-    margin-left: 100px;
-}
-h3{
-    font-size: 40px;
-    text-transform: capitalize;
-    font-family: 'Karla', sans-serif;
-    margin-bottom: 20px;
-}
-.insurance button{
+.about-h2{
+    font-size: 35px;
     text-transform: uppercase;
-    background-color: white;
-    border-radius: 3px;
-    padding: 8px 4px;
-    margin-top: 30px;
+    color: rgb(45,38,64);
 }
-.media2{
-    width: 30%;
-    margin: 100px 0;
-    margin-left: 170px;
+.about-p{
+    font-size: 20px;
+    padding: 20px 0;
 }
 /* section-3 */
-.article3{
-    margin-bottom: 50px;
+.feature{
+    padding: 25px 0;
 }
-h4{
-    font-size: 35px;
-    font-family: 'Karla', sans-serif;
+.feature header{
+    margin-bottom: 18px;
 }
-.icon{
+.feature-header{
+    color: rgb(45,38,64);
+}
+.line-color{
+    background-color: grey;
+    margin-bottom: 12px;
+}
+.icon-box{
+    width: 29px;
+    height: 29px;
+    background-color: skyblue;
     display: flex;
-    margin-top: 30px;
-}
-.icon a{
-    text-decoration: none;
     justify-content: center;
     align-items: center;
-    display: flex;
-    height: 30px;
-    width: 30px;
     border-radius: 50%;
-    background-color: rgb(138,180,240);
     color:white;
-}
-h5{
-    font-size: 20px;
-    font-family: 'Karla', sans-serif;
+    margin-bottom: 10px;
+  }  
+ .feature h3{
+    font-size: 25px;
+    color: rgb(45,38,64);
     margin: 10px 0;
 }
-.article3 hr{
-    border-top:1px solid grey;
-    margin-left: 5px;
-    width: 25%;
+.feature p{
+    font-size: 15px;
+    color: rgb(45,38,64);
 }
 /* section-4 */
 .article4{
@@ -196,7 +202,7 @@ h5{
     padding: 70px 0;
     background-color: rgb(45,38,64);
 }
-h6{
+h4{
     font-size: 35px;
     color: white;
     max-width: 360px;
